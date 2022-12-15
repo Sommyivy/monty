@@ -12,7 +12,7 @@ int main(int ac, char **av)
 	stack_t *stack;
 
 	stack = NULL;
-	if (ac !=2 )
+	if (ac != 2 )
 	{
 	printf("USAGE: monty file");
 	error_exit(&stack);
