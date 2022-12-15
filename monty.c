@@ -1,9 +1,8 @@
 #include "monty.h"
 int sq_flag = 0;
-
 /**
  * main - driver function for monty program
- * @ac: int number of arguments
+ * @ac: int num of arguments
  * @av: opcode file
  * Return: 0
  */
@@ -12,12 +11,11 @@ int main(int ac, char **av)
 	stack_t *stack;
 
 	stack = NULL;
-	if (ac != 2 )
+	if (ac != 2)
 	{
-	printf("USAGE: monty file");
-	error_exit(&stack);
+		printf("USAGE: monty file\n");
+		error_exit(&stack);
 	}
-
 	read_file(av[1], &stack);
 	free_dlistint(stack);
 	return (0);
